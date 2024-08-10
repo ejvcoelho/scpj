@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCPJ - Sistema de Controle de Processos Judiciais</title>
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
+
+
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -84,6 +92,17 @@
             transition: background-color 0.3s ease;
         }
 
+        .btn-input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0056b3;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
         input[type="submit"]:hover {
             background-color: #004494;
         }
@@ -108,7 +127,8 @@
             <img src="logo.jpeg" alt="Logo SCPJ">
         </div>
         <h1>SCPJ</h1>
-        <p>Nosso Sistema de Controle de Processos Judiciais está em construção.<br /> Em breve, você poderá utilizar o SCPJ para gerenciar seus processos de forma eficiente e totalmente online.</p>
+        <p>Nosso Sistema de Controle de Processos Judiciais está em construção.<br /> Em breve, você poderá utilizar o
+            SCPJ para gerenciar seus processos de forma eficiente e totalmente online.</p>
         <p>Agradecemos sua paciência e compreensão.</p>
 
         <div class="form-info">
@@ -121,9 +141,11 @@
             <input type="hidden" name="_next" value="https://scpj.com.br/thanks.html">
             <input type="text" name="nome" placeholder="Seu Nome" required>
             <input type="email" name="email" placeholder="Seu Email" required>
-            <input type="submit" value="Entrar na Lista de Espera">
+            <input type="submit" value="Entrar na Lista de Espera" class="g-recaptcha" data-sitekey="6Lez_iMqAAAAAETlEWFz58zT09z_4HGGHUUnXick" data-callback="onSubmit">
+            <!--<button class="g-recaptcha btn-input" data-sitekey="6Lez_iMqAAAAAETlEWFz58zT09z_4HGGHUUnXick" data-callback="onSubmit"
+                value="Enviar">Enviar</button>-->
         </form>
-
+        
         <div class="footer">
             <a href="mailto:scpj@scpj.com.br"> &copy; 2024 SCPJ. Todos os direitos reservados. </a>
         </div>
