@@ -57,7 +57,9 @@
         <h3>Entre para a lista de espera</h3>
         <form id="espera" action="https://globogroup.com.br/scpj/system/send_mail/formsend.php" method="post">
             <input type="hidden" name="assunto" value="Lista de espera - Versão Beta">
+            <input type="hidden" name="destinatario" value="scpj@scpj.com.br">
             <input type="hidden" name="proximo" value="https://scpj.com.br/thanks.html">
+            <input type="hidden" name="erro" value="https://scpj.com.br/send_erro.html">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
