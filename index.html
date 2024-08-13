@@ -55,14 +55,13 @@
 
     <section id="contato" class="contato">
         <h3>Entre para a lista de espera</h3>
-        <form id="espera" action="https://formsubmit.co/scpj@scpj.com.br" method="post">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="Lista de espera - Versão Beta">
-            <input type="hidden" name="_next" value="https://scpj.com.br/thanks.html">
+        <form id="espera" action="https://globogroup.com.br/scpj/system/send_mail/formsend.php" method="post">
+            <input type="hidden" name="assunto" value="Lista de espera - Versão Beta">
+            <input type="hidden" name="proximo" value="https://scpj.com.br/thanks.html">
             <input type="text" name="nome" placeholder="Nome" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <textarea name="mensagem" rows="5" placeholder="Mensagem"></textarea>
-            <input type="submit" value="Entrar na Lista de Espera" class="g-recaptcha" data-sitekey="6Lez_iMqAAAAAETlEWFz58zT09z_4HGGHUUnXick" data-callback="onSubmit">
+            <input type="submit" value="Entrar na Lista de Espera" class="contato--button g-recaptcha" data-sitekey="6Lez_iMqAAAAAETlEWFz58zT09z_4HGGHUUnXick" data-callback="onSubmit">
         </form>
     </section>
 
