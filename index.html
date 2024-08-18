@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCPJ - Sistema de Controle de Processos Judiciais</title>
     <link rel="stylesheet" href="style.css">
@@ -15,24 +14,27 @@
         }
     </script>
 </head>
-
 <body>
-    <header class="menu">
-        <div class="limite">
-            <div class="logo">
+	<header id="cabecalho">
+        <div class="container Flex">
+            <div id="logo">
+                
                 <img src="logo.jpeg" alt="Logo SCPJ">
-                <span>SCPJ</span>
+                <h4 id="teste">SCPJ</h4>
             </div>
-            <nav class="menu-items">
-                <a href="#home">Home</a>
-                <a href="#planos">Planos</a>
-                <a href="#contato">Sistema</a>
+
+            <nav id="menu">
+                <input type="checkbox" id="check">
+                <label for="check" id="lblmenu">&#x2263;</label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li id="link--sistema"><a href="#contato">Sistema</a></li>
+                </ul>
             </nav>
-           
         </div>
     </header>
-
-    <div class="hero">
+	<div class="hero">
         <h1>SCPJ - Sistema de Controle de Processos Judiciais</h1>
         <p>Um programa totalmente WEB e online para controle de processos judiciais de advogados e escritórios de
             advocacia. Lançamento em breve! Entre para a lista de espera.</p>
@@ -70,8 +72,6 @@
     <footer>
          <a href="mailto:scpj@scpj.com.br">EJ Tecnologia © 2024 SCPJ. Todos os direitos reservados.</a>
     </footer>
-
-    
+	
 </body>
-
 </html>

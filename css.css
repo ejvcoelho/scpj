@@ -1,0 +1,695 @@
+/* Importaçaõ de fonte do Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* resetar estilo css */
+* {
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* rolagem suave da pagina */
+html {
+    scroll-behavior: smooth;
+}
+
+/* página de painel financeiro*/
+.painel--financeiro {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.conteudo-painel-financeiro {
+    padding: 10px;
+}
+
+.ativo--unico {
+    display: block;
+    width: 99.8%;
+    border: 1px solid #000;
+}
+
+/* =========== configurações css padrão =================*/
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 1em;
+
+    ::selection {
+        background-color: #9c7736;
+        color: #fff;
+    }
+}
+
+.sectionsubtitle {
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #868585;
+    border-left: 3px solid #9c7736;
+    font-weight: 700;
+
+}
+
+.sectiontext {
+    padding-left: 7px;
+    padding-left: 7px;
+    color: #868585;
+
+}
+
+            
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.divisor {
+    max-width: 700px;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    padding: 10px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#lblmenu {
+    color: #fff;
+    font-size: 2em;
+    position: fixed;
+    top: 2px;
+    right: 15px;
+
+}
+
+#lblmenu:hover {
+    color: #9c7736;
+}
+
+#logo h4 {
+    color: #fff;
+    padding: 25px 15px;
+    font-size: 15px;
+}
+
+
+#menu {
+    margin-top: 0px;
+    /* direction: block; */
+    padding: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+#menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #a9a9a9;
+    margin-top: 0px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+main {
+    height: 90vh;
+    background: url(image/fundo.png);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+
+}
+
+main h1 {
+    font-size: 2em;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin: 10px 0px 10px 0px;
+}
+
+Main h3 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+/* ================ seção sobre ===================*/
+
+#sobre h3 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+/* ================= seção de vídeo ============== */
+#textovideo {
+    padding-right: 25px
+}
+
+#textovideo h3 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#textovideo h2 {
+    font-size: 1em;
+
+    text-align: justify;
+
+}
+
+#secaodevideo {
+    padding: 50px 10px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
+
+
+.botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #9c7736;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#agradecimento {
+    margin-top: 100px;
+}
+
+#agradecimento h1 {
+    text-align: center;
+}
+
+#agradecimento h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+#agradecimento h5 {
+    font-weight: normal;
+    text-align: center;
+}
+
+/* ================= seção de serviços ========================== */
+#section-servicos {
+    margin-bottom: 50px;
+}
+
+.icone-servico {
+    opacity: 0.8;
+}
+
+.margem-fundo {
+    margin-bottom: 25px;
+}
+
+.link-servicos {
+    text-decoration: none;
+    color: #9c7736;
+}
+
+.servicos {
+    font-size: 50px;
+    color: #9c7736;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.conteudo-servico {
+    margin-left: 15px;
+    font-size: 14px;
+    text-align: justify;
+    width: 250px;
+}
+
+.separador {
+    width: 50px;
+    border: 1px solid #9c7736;
+}
+
+.titulo-servico {
+    color: #343538;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.descricao-servico {
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.margem-bottom {
+    margin-bottom: 25px;
+}
+
+/* ============ formulario de contato ============*/
+
+.form-contato {
+    width: 300px;
+    color: #9c7736;
+    padding-top: 25px;
+    border: 1px solid #9c7736;
+    padding: 15px;
+}
+
+
+#contato {
+    padding: 25px;
+    border-bottom: 0;
+}
+
+#titulo-contato h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#divbotoes {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#divbotoes button {
+    margin-right: 50px;
+    width: 75px;
+    height: 25px;
+}
+
+.botoes {
+    width: 75px;
+    height: 25px;
+}
+
+.divcampos {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#agradecimento {
+    display: block;
+    justify-content: center;
+
+
+}
+
+#sobre {
+    padding: 50px 0px;
+}
+
+#destaquesobre {
+    display: none;
+}
+
+#textosobre {
+    text-align: justify;
+    padding: 10px;
+}
+
+#textosobre h2 {
+    margin-bottom: 10px;
+}
+
+#destaquesobre img {
+    border-radius: 0%;
+}
+
+
+
+
+
+/*====>> botão voltar ao topo */
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.voltar-ao-topo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#seta {
+    font-size: 14px;
+}
+
+footer {
+    padding: 0px;
+    background-color: #000;
+}
+
+
+#rodape h2 {
+    text-decoration: none;
+    color: #9c7736;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: #000;
+    height: 20px;
+    text-align: center;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: #9c7736;
+}
+
+.fotolegenda {
+    position: relative;
+
+}
+
+.fotolegenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.fotolegenda:hover figcaption {
+    opacity: 1;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+figcaption div {
+    text-align: center;
+}
+
+figcaption div h2 {
+    color: #9c7736;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+figcaption div h4 {
+    font-weight: normal;
+}
+
+figcaption div h5 {
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icones-sobre {
+    color: #fff;
+}
+
+/* =============== cartoes de publicação ================*/
+
+.todos {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.todos a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.card {
+    /* criando o layout dos cartões*/
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: justify;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.card a {
+    padding: 10px 100px;
+    border: 0;
+}
+
+
+
+/* ================== páginas de argitos ============ */
+.publicacoes {
+    margin-top: 100px;
+}
+
+#publicacoes-todas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#foto {
+    max-width: 800px;
+    display: none;
+}
+
+#imagemartigo {
+    text-align: center;
+}
+
+#corpoartigo {
+    padding-bottom: 25px;
+    max-width: 800px;
+}
+
+.publicacao {
+    padding: 10px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.publicacao h4 {
+    color: #9c7736;
+}
+
+.citacao {
+    margin-left: 1.5cm;
+    background-color: #f7f7f7;
+    border-left: 5px solid #9c7736;
+    padding: 15px;
+    font-style: italic;
+}
+
+.tituloartigo {
+    position: relative;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.tituloartigo h6 {
+    color: #9c7736;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: none;
+}
+
+.textonegrito {
+    font-weight: 700;
+}
+
+.listaartigo {
+    margin-left: 1.5cm;
+}
+
+.conteudoartigo a {
+    text-decoration: none;
+    color: #9c7736;
+}
+
+#referencias {
+    word-wrap: break-word;
+}
+
+.mapa iframe {
+    width: 325px;
+    height: 200px;
+    padding-top: 15px;
+}
+
+.Flex5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* ===========configurações para computador ============*/
+@media (min-width:1000px) {
+
+    #menu {
+        padding: 0px;
+    }
+
+    #menu ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    #menu ul li {
+        float: left;
+        border: 0;
+    }
+
+    #menu ul li a:hover {
+        color: #9c7736;
+    }
+
+    #lblmenu {
+        display: none;
+    }
+
+    #logo h4 {
+        padding: 25px;
+    }
+
+    #destaquesobre {
+        display: inline;
+    }
+
+    #textosobre {
+        padding: 0px 25px;
+    }
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    /* modificando o Flex 3 - secção do vídeos */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .citacao {
+        margin-left: 4cm;
+        background-color: #f7f7f7;
+        border-left: 5px solid #9c7736;
+        padding: 15px;
+        font-style: italic;
+    }
+
+    #foto {
+        max-width: 800px;
+        display: inline;
+    }
+
+
+    .mapa iframe {
+        width: 600px;
+        height: 450px;
+        padding-top: 15px;
+    }
+
+}

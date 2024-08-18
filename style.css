@@ -1,52 +1,115 @@
+/* Importaçaõ de fonte do Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* resetar estilo css */
+* {
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* rolagem suave da pagina */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========== configurações css padrão =================*/
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 1em;
+
+    ::selection {
+        background-color: #a9a9a9;
+        color: #fff;
+    }
 }
 
-/* Menu */
-.menu {
+
+/* =========== Cabeçalho =================*/
+
+#cabecalho {
     background-color: #041d31;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
-.menu img {
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#logo h4 {
+    color: #fff;
+    padding: 25px 15px;
+    font-size: 15px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
     height: 40px;
 }
 
-.menu .logo {
-    display: flex;
-    align-items: center;
+
+#lblmenu {
+    color: #fff;
+    font-size: 2em;
+    position: fixed;
+    top: 2px;
+    right: 15px;
+
 }
 
-.menu .logo span {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
+#lblmenu:hover {
+    color: gray;
 }
 
-.menu .menu-items {
-    display: flex;
-    gap: 20px;
-}
 
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
+#menu {
+    margin-top: 0px;
+    /* direction: block; */
     padding: 10px;
-    font-weight: bold;
 }
 
-.menu .menu-items a:last-child {
+#menu ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+#menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #a9a9a9;
+    margin-top: 0px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+#link--sistema {
     background-color: #ff0000;
     color: #ffffff;
     padding: 10px 20px;
@@ -55,6 +118,7 @@ body {
 
 
 
+/* corpo da página */
 /* Primeira Div */
 .hero {
     background: url('https://cdn.law.asia/wp-content/uploads/2020/07/software-legal-technology-IT.jpg') no-repeat center center/cover;
@@ -65,6 +129,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
+    
 }
 
 .hero::before {
@@ -82,11 +147,17 @@ body {
     font-size: 48px;
     margin: 0;
     z-index: 2;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .hero p {
     font-size: 20px;
     z-index: 2;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Planos */
@@ -175,4 +246,44 @@ footer a {
     align-items: center;
     max-width: 1200px;
     min-width: 800px;
+}
+
+
+
+
+/* dispositivo móvel */
+
+@media (min-width:800px) {
+
+    #logo h4 {
+        padding: 25px;
+    }
+
+    #menu {
+        padding: 0px;
+    }
+
+    #menu ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    #menu ul li {
+        float: left;
+        border: 0;
+    }
+
+    #menu ul li a:hover {
+        color: #a9a9a9;
+    }
+
+    #lblmenu {
+        display: none;
+    }
+
+
 }
